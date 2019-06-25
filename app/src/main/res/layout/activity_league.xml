@@ -10,19 +10,21 @@
     <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp" app:srcCompat="@drawable/desiredleaguebg"
-            android:id="@+id/imageView3"
+            android:id="@+id/backgroundImg"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" android:scaleType="centerCrop"
-            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="1.0"/>
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="1.0"
+            android:contentDescription="@string/background_image"/>
     <ImageView
             android:layout_width="124dp"
             android:layout_height="46dp" app:srcCompat="@drawable/swooshlogo"
             android:id="@+id/swooshLogo" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
-            android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/swoowsh_logo"/>
     <TextView
-            android:text="Desire To League"
+            android:text="@string/desire_to_league"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView4" app:layout_constraintStart_toStartOf="parent"
@@ -38,30 +40,30 @@
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView4"
             android:layout_marginTop="64dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp">
         <ToggleButton
-                android:text="Mens"
+                android:text="@string/mens"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/toggleButton" android:fontFamily="@font/montserrat"
-                android:textOff="Mens" android:textOn="Mens" android:checked="false"
+                android:textOff="@string/mens" android:textOn="@string/mens" android:checked="false"
                 android:background="@drawable/swoosh_toogle" android:textColor="@color/colorAccent"/>
         <ToggleButton
-                android:text="Womens"
+                android:text="@string/womens"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/toggleButton2" android:layout_marginTop="10dp"
-                android:textOff="Womens" android:textOn="Womens" android:layout_marginBottom="10dp"
+                android:textOff="@string/womens" android:textOn="@string/womens" android:layout_marginBottom="10dp"
                 android:textColor="@color/colorAccent" android:background="@drawable/swoosh_toogle"/>
         <ToggleButton
-                android:text="CO-ED"
+                android:text="@string/co_ed"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton3" android:textOff="CO-ED"
-                android:textOn="CO-ED" android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content" android:id="@+id/toggleButton3" android:textOff="@string/co_ed"
+                android:textOn="@string/co_ed" android:textColor="@color/colorAccent"
                 android:background="@drawable/swoosh_toogle"/>
     </LinearLayout>
     <Button
-            android:text="NEXT"
+            android:text="@string/next"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/SubmitBtn" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/getStartedBtn" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.0"
             android:layout_marginEnd="16dp" android:layout_marginStart="16dp" android:fontFamily="@font/montserrat"
             android:textColor="@color/colorAccent" android:background="@drawable/swoosh_button"
