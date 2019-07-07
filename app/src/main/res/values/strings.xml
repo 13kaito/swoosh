@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Swoosh</string>
+    <string name="app_nameballer">Swoosh</string>
     <string name="background_image">Background Image</string>
     <string name="swoowsh_logo">swoowsh logo</string>
     <string name="mens">Mens</string>
@@ -12,4 +12,9 @@
     <string name="find_a_team_in_your_city_and_dominate_the_league">Find a team in your city and dominate the league
     </string>
     <string name="get_started">GET STARTED</string>
+    <string name="i_am_a">I am a</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="beginner">Beginner</string>
+    <string name="finish">FINISH</string>
+    <string name="baller">Baller</string>
 </resources>

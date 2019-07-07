@@ -63,9 +63,10 @@
             android:text="@string/next"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/getStartedBtn" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/FinishedBtn" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.0"
             android:layout_marginEnd="16dp" android:layout_marginStart="16dp" android:fontFamily="@font/montserrat"
             android:textColor="@color/colorAccent" android:background="@drawable/swoosh_button"
-            android:layout_marginBottom="24dp" app:layout_constraintBottom_toBottomOf="parent"/>
+            android:layout_marginBottom="24dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="LeagueNextClicked"/>
 </android.support.constraint.ConstraintLayout>
