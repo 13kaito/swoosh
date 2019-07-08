@@ -1,13 +1,12 @@
-package com.kk.swoosh
+package com.kk.swoosh.Contrtoller
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
+import com.kk.swoosh.App_Code.EXTRA_LEAGUE
+import com.kk.swoosh.R
 import kotlinx.android.synthetic.main.activity_league.*
-import kotlinx.android.synthetic.main.activity_welcome.*
 
 class LeagueActivity : BaseActivity() {
     var selectedLeague = "";
@@ -35,7 +34,7 @@ class LeagueActivity : BaseActivity() {
             R.id.CoedLeagueBtn ->{
                 WomensLeagueBtn.isChecked = false
                 MensLeagueBtn.isChecked=false
-                selectedLeague = "Coed"
+                selectedLeague = "Co-ed"
             }
 
             R.id.MensLeagueBtn -> {

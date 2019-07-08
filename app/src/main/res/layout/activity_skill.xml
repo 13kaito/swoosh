@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SkillActivity">
+        tools:context=".Contrtoller.SkillActivity">
 
     <ImageView
             android:layout_width="0dp"
@@ -43,19 +43,20 @@
         <ToggleButton
                 android:text="@string/togglebutton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton4" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/BeginnerBtn" android:layout_weight="1"
                 tools:layout_editor_absoluteY="173dp" tools:layout_editor_absoluteX="112dp"
                 android:background="@drawable/swoosh_toogle" android:textOff="@string/beginner"
                 android:textOn="@string/beginner"
-                android:textColor="@color/colorAccent" android:fontFamily="@font/montserrat" android:textSize="18sp"/>
+                android:textColor="@color/colorAccent" android:fontFamily="@font/montserrat" android:textSize="18sp"
+                android:onClick="OnToggleClicked"/>
         <ToggleButton
                 android:text="@string/togglebutton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton5" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/BallerBtn" android:layout_weight="1"
                 android:background="@drawable/swoosh_toogle" android:textOff="@string/baller"
                 android:textOn="@string/baller"
                 android:textColor="@color/colorAccent" android:fontFamily="@font/montserrat" android:textSize="18sp"
-                android:layout_marginStart="10sp"/>
+                android:layout_marginStart="10sp" android:onClick="OnToggleClicked"/>
     </LinearLayout>
     <Button
             android:text="@string/finish"
@@ -66,5 +67,5 @@
             android:layout_marginEnd="16dp" android:layout_marginStart="16dp" android:fontFamily="@font/montserrat"
             android:textColor="@color/colorAccent" android:background="@drawable/swoosh_button"
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/bgImg"
-            android:textSize="24sp"/>
+            android:textSize="24sp" android:onClick="OnNextClicked"/>
 </android.support.constraint.ConstraintLayout>
