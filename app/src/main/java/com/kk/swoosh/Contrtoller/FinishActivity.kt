@@ -2,8 +2,8 @@ package com.kk.swoosh.Contrtoller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.kk.swoosh.App_Code.EXTRA_LEAGUE
-import com.kk.swoosh.App_Code.EXTRA_SKILL
+import com.kk.swoosh.App_Code.EXTRA_PLAYER
+import com.kk.swoosh.Model.Player
 import com.kk.swoosh.R
 import kotlinx.android.synthetic.main.activity_finish.*
 
@@ -13,10 +13,9 @@ class FinishActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finish)
 
-        val League = intent.getStringExtra(EXTRA_LEAGUE)
-        val Skill = intent.getStringExtra(EXTRA_SKILL)
+        val player = intent.getParcelableExtra<Player>(EXTRA_PLAYER)
 
 
-        SearchLeagueTxt.text = "Looking for $League $Skill league near you..."
+        SearchLeagueTxt.text = "Looking for ${player.league} ${player.skill} league near you..."
     }
 }
