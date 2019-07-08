@@ -3,6 +3,7 @@ package com.kk.swoosh.Contrtoller
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.kk.swoosh.App_Code.EXTRA_PLAYER
 
 open class BaseActivity : AppCompatActivity() {
 

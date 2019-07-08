@@ -4,9 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.kk.swoosh.App_Code.EXTRA_LEAGUE
 import com.kk.swoosh.App_Code.EXTRA_PLAYER
-import com.kk.swoosh.App_Code.EXTRA_SKILL
 import com.kk.swoosh.Model.Player
 import com.kk.swoosh.R
 import kotlinx.android.synthetic.main.activity_league.*
@@ -18,6 +16,19 @@ class SkillActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill)
         player = intent.getParcelableExtra(EXTRA_PLAYER)
+    }
+
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+        outState?.putParcelable(EXTRA_PLAYER,player)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+
+        if(savedInstanceState != null){
+            player = savedInstanceState.getParcelable(EXTRA_PLAYER)
+        }
     }
 
     fun OnToggleClicked(view: View){
